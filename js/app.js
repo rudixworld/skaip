@@ -17,7 +17,14 @@ $(document).on('click', '.addtopic', function() {
         values[this.name] = $(this).val();
     });
     console.log(values)
-	//$('#secondModal').foundation('reveal', 'open');
+    if (!values.title) {
+
+    } else if(!values.skypeid) {
+
+    } else {
+    	$('#secondModal').foundation('reveal', 'open');
+    }
+	//
 })
 
 //validation
